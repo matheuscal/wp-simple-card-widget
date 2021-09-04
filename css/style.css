@@ -1,0 +1,98 @@
+:root {
+    /* Variables */
+    --black: rgb(71, 71, 71);
+    --blackest: rgb(36, 36, 36);
+}
+
+/* Admin Panel */
+
+.upload-image-button {
+    color: #fff!important;
+    margin-top: 0.4rem;
+}
+
+/* Card */
+
+.card-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 1.2rem;
+}
+
+.card-button {
+    border: none;
+    border-radius: 3px;
+    color: var(--white);
+    background-color: var(--blackest);
+    padding: 11px 14px;
+    margin: 0 3px;
+    font-size: 0.8rem;
+}
+
+.card-button:hover {
+    color: var(--white);
+    text-decoration: none;
+    animation-name: bounce;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#projectsContainer {
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+    margin: 1rem 0 1rem 0;
+    background: linear-gradient(to top, rgb(227 237 250) 0%, rgb(255, 255, 255) 38%);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px 0px rgba(43, 67, 116, 0.459);
+    max-width: 284px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-card > h5 {
+    color: var(--black);
+    margin-bottom: 1.2rem;
+}
+
+.project-card > p {
+    color: var(--black);
+    padding: 0.2rem 0.2rem;
+}
+
+/* Media Queries */
+@media (min-width: 520px) {
+    .project-card {
+        max-width: 300px;
+    }
+}
+@Media (min-width: 686px) {
+    .project-card {
+        margin: 8px 15px;
+    }
+}
+
+/* Keyframes & Animation relateds ------------------------- */
+
+@keyframes bounce {
+    
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.05, 1.05);
+    }
+
+    100% {
+        transform: scale(1.04, 1.04);
+    }
+}
