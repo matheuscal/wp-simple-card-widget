@@ -110,7 +110,7 @@ class Custom_Card_Widget extends WP_Widget {
         <!-- Second Button Link -->
         <p>
             <label for='<?php echo esc_attr( $this->get_field_id('btn2link') ); ?>'>
-            <?php esc_attr_e( 'First Button Link: ', "cc-domain" ); ?>
+            <?php esc_attr_e( 'Second Button Link: ', "cc-domain" ); ?>
             </label>
             <input type='text' class='widefat' id='<?php echo esc_attr( $this->get_field_id('btn2link') );?>' 
                 name='<?php echo esc_attr( $this->get_field_name('btn2link')); ?>'
